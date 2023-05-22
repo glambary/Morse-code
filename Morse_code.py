@@ -4,7 +4,7 @@ import random
 words = ['code', 'bit', 'list', 'soul', 'horse', 'stone', 'sleep', 'dream', 'program', 'python', 'team']
 
 
-def morse_encode(word):
+def morse_encode(word: str) -> str:
     """
     Эта функция преобразует слово в код Морзе.
 
@@ -45,7 +45,7 @@ def morse_encode(word):
         word[i] = code.get(word[i], 0)
     return ' '.join(word)
 
-def get_word():
+def get_word() -> str:
     """
     Возвращает рандомно выбранное слово (type str) из списка words
     """
@@ -55,7 +55,7 @@ def get_word():
     return word
 
 
-def main():
+def main() -> None:
     global words
     
     answer = []
